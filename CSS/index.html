@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+   <!--Inline CSS--> 
+   <h1 style = "color:blue">Título na cor azul</h1>
+   <h1 style="color: red">Título na cor vermelha</h1>
+
+   <!--Múltiplas regras-->
+   <h1 style = "color:purple; font-size: 40px;border-bottom: 1px solid red;">Mudar cor e tamanho da fonte</h1>
+
+    <!--Internal CSS-->
+    <style>
+        p{
+            /*color: gold;*/
+            /* font-size: 40px; */
+        }
+    </style>
+
+    <p>Eu fui estilizado pelo internal CSS</p>
+    <p>Mais um estilizado pelo CSS</p>
+    <p>Outro parágrafo estilizado pelo CSS</p>
+
+    <!-- External CSS -->
+    <!-- Cascating Style Sheets : Folhas de estilo em cascata-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/list.css">
+    <h3>Meu título verde</h3>
+
+    <!--Ordem do CSS-->
+    <p style = "color: red">Ordem do CSS</p>
+    <!--Sobrescreveu o internal da linha 18-->
+
+    <!--Foi carregado por último-->
+    <p>Ordem do CSS</p>
+
+    <!--Múltiplos CSS-->
+    <ul>
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Abacate</li>
+    </ul>
+
+    <!--Classes-->
+    <p class="paragraph">Algum texto</p>
+    <p class="paragraph">Algum texto2</p>
+    <p class="paragraph">Algum texto3</p>
+
+    <!--ID-->
+    <h1 id="exclusive-title">Este é um título com id</h1>
+    
+    <!--Múltiplas regras, ordem do CSS-->
+    <h2 id = "algum-titulo" class="titulo">Algum texto 1</h2>
+    <h2 class="titulo">Algum texto 2</h2>
+    <h2>Algum texto 3</h2>
+
+    <!--Nome das cores-->
+    <p class="color-name">Qualquer texto para nome de cores</p>
+    
+    <!--Hexadecima : Hex-->
+    <p class="hex">Parágrafo com hex</p>
+    <p class="hex-2">Parágrafo com outro hex</p>
+    
+    <!--Mais sobre hex-->
+    <p class="simple-hex">Hex simplificado</p>
+    <p class="simple-hex-2">Hex simplificado 2</p>
+    
+    <!--RGB-->
+    <p class="rgb">Este foi estilizado com RGB</p>
+    <p class="mixed-rgb">Este foi estilizado com RGB</p>
+
+    <!--RGBA-->
+    <p class="rgba">Este foi estilizado com RGBA</p>
+    
+    <!--HSL-->
+    <p class="hsl">Este foi estilizado com hsl</p>
+    <p class="hsl-2">Este foi estilizado com hsl 2</p>
+    
+    <!--Background color-->
+    <p class="bg">Mude o meu background</p>
+    <h2 class="bg-2">Outra variação de BG</h2>
+
+    <!--Opacidade no background-->
+    <div class = "bg-opacity">
+        <p>Estou aqui!</p>
+    </div>
+
+    <div class = "bg-opacity-2">
+        <p>Estou aqui quase visível!</p>
+    </div>
+
+    <!--RGBA com opacidade-->
+    <div class="rgba-opacity">
+        <h1>Este título precisa estar visível</h1>
+    </div>
+
+    <!--Background image-->
+    <h1 class="bg-image">Este título tem uma imagem</h1>
+    
+    <!--Centralizar imagem do background-->
+    <div class="not-centered-bg"></div>
+    <br>
+    <div class="centered-bg"></div>
+
+    <!--Largura e altura-->
+    <div class="height-width"></div>
+    <div class="height-width-2"></div>
+
+    <!--Padding-->
+    <div class="without-padding">Este texto não tem padding</div>
+    <br> <br>
+    <div class="padding">Este tem padding</div>
+    
+    <!--Padding individual-->
+    <p class="padding-individual">Este elemento em paddings diferentes</p>
+
+    <!--Shorthand padding-->
+    <p class="shorthand-padding">Algum texto</p>
+    <p class="shorthand-padding-2">Algum texto 2</p>
+
+</body>
+    </html>

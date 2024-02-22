@@ -1,0 +1,180 @@
+/* External*/
+body{
+    /*Barra lateral para rolar a tela*/
+    padding-bottom: 500px;
+}
+h3{
+    color: green;
+}
+/*p{
+    color : blueviolet
+}*/
+
+/* Classes */
+.paragraph{
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+
+/*IDs*/
+#exclusive-title{
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/*Ordem das regras*/
+h2{
+    border-bottom: 2px solid red;
+}
+.titulo{
+    border-bottom: 5px solid blue;
+}
+#algum-titulo{
+    border-bottom: 5px solid green;
+}
+
+/*Nome de cores*/
+
+.color-name{
+    color: rgb(29, 96, 98)
+}
+
+/*Hex*/
+.hex{
+    color: #55a398;
+}
+.hex-2{
+    color: #11ff15;
+}
+
+/*Aprofundando em rex*/
+.simple-hex{
+    color: #333;
+}
+.simple-hex-2{
+    /*Posso otimizar se tiver repetindo: aa55ff*/
+    color: #a5f;
+}
+
+/*RGB*/
+.rgb{
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb{
+    color: rgb(199, 21, 47)
+}
+
+/*RGBA*/
+.rgba{
+    /*O padrão é 1, se eu coloco um valor mais próximo de zero
+    eu abaixo a opacidade*/
+    color: rgba(100, 199, 45, 0.5)
+}
+
+/*HSL*/
+.hsl{
+    color: hsl(100, 20%, 50%)
+}
+
+.hsl-2{
+    color: hsl(201, 44%, 69%);
+}
+
+/*Background color: Cor de fundo do texto*/
+.bg{
+    background-color: #000;
+    color: yellow
+}
+
+.bg-2{
+    background-color: rgb(200,20,40);
+    color: #00eaff;
+}
+
+/*Background opacity*/
+.bg-opacity{
+    background-color: green;
+    opacity: 0.2;
+}
+
+.bg-opacity-2{
+    background-color: #999;
+    color : #000;
+    opacity : 0.8;
+}
+
+/*RGBA com opacidade*/
+.rgba-opacity{
+    background-color: rgba(90, 120, 20, 0.2);
+    color: black;
+}
+
+/*Background image*/
+.bg-image{
+    background-image: url("../img/universo.avif") ;
+    padding: 100px; /*Aumenta o tamanho do background*/
+    color: #fff;
+}
+
+/*Centralizando background image*/
+.not-centered-bg, .centered-bg{
+    height: 200px; /*Altura*/
+    width: 200px;  /*Largura*/
+    background-image: url("../img/gato.avif");
+}
+
+.centered-bg{
+    background-position: center; /*Imagem no centro do elemento*/
+    background-size: cover; /*Cobre todo o elemento, mantendo sua proporção original
+                             e cortando as partes que não cabem*/
+}
+
+/*Largura e altura*/
+.height-width{
+    /*Retângulo... mais largura do que altura*/
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2{
+    height: 200px;
+    background-color: #333;
+}
+
+/*Padding*/
+.without-padding, .padding{
+    background-color: #111;
+    color: #fff;
+}
+.padding{
+    background-color: #333;
+    padding: 50px;
+}
+
+.padding-individual{
+    background-color: #222;
+    color: #FFF;
+    padding-top: 5px; /*Cima*/
+    padding-right: 20px; /*Direita*/
+    padding-bottom: 40px; /*Embaixo*/
+    padding-left: 10px; /*Esquerda*/
+}
+
+/*Shorthand padding*/
+.shorthand-padding{
+    background-color: #444;
+    /*Sentido horário: top, right, bottom e left*/
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2{
+    background-color: #444;
+    /*Top e right*/
+    padding: 10px 20px;
+    /*padding: 10px 20px 10px 20px*/
+}
