@@ -1,0 +1,14 @@
+/*Box model*/
+#box-model-desafio{
+    margin: 20px;
+    color: #ea0000;
+    padding: 15px 25px;
+    border: 5px solid #845;
+    outline: 5px solid rgb(52, 2, 14);
+    background-color: #123;
+}
+.Testando-box-model{
+    background-color: black;
+    color: #fff;
+    border: none;
+}

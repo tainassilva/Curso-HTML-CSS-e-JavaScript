@@ -14,7 +14,7 @@ h3{
 .paragraph{
     background-color: black;
     color: aqua;
-    padding: 5px;
+    padding: 5px; /*Tamanho da caixinha onde está o texto*/
 }
 
 /*IDs*/
@@ -133,7 +133,7 @@ h2{
                              e cortando as partes que não cabem*/
 }
 
-/*Largura e altura*/
+/*Altura e largura*/
 .height-width{
     /*Retângulo... mais largura do que altura*/
     height: 200px;
@@ -178,3 +178,85 @@ h2{
     padding: 10px 20px;
     /*padding: 10px 20px 10px 20px*/
 }
+    /*Padding com width*/
+.without-border-box{
+    background-color: #444;
+    color: #fff;
+    width: 400px; 
+    padding: 50px;
+}
+.border-box{
+    background-color: #666;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box; /*Ajustando para não passar dos valores da border box*/
+}
+
+/*Border*/
+.border{
+    border: 5px solid red;/*Grossura e cor da borda*/
+    padding: 5px; /*Tamanho da caixinha onde está o elemento*/
+    /*Quanto mais eu aumento o padding , mais a borda fica distante do elemento*/
+}
+.border-2{
+    border: dotted #931; /*Borda tracejada*/
+    padding: 20px;
+}
+
+/*Borda individual*/
+.border-left{
+    border-left: 3px solid red; /*Borda à esquerda*/
+    background-color: #222;
+    padding: 25px;
+}
+.border-bottom{
+    border-bottom: 5px double #399; /*Dobrando a borda na parte inferior*/
+    background-color: #222;
+    padding: 20px;
+}
+/*Borda arredondada*/
+.rounded-p{
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+/*Sem borda mas texto com background arredondado*/
+.rounded-p-2{
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
+/*margem no canto*/
+.margin{
+    margin: 20px;
+    background-color: #444;
+}
+/*Margem em cima*/
+.margin-top{
+    margin-top: 50px;
+    background-color: #444;
+    padding: 10px;
+}
+/*Margem nos 4 cantos ... Seguindo sentido horário*/
+.margin-shorthand{
+    background-color: #666;
+    margin: 5px 10px 15px 20px
+}
+/*Box model*/
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #845;
+    border-radius: 7px;
+    width: 200px;
+    height: 400px;
+    font-size: 40px;
+}
+
+
+
+
