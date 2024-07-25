@@ -1,0 +1,201 @@
+body {
+  padding-bottom: 500px;
+}
+
+/* 1 - flex */
+.flex {
+  /*Um do lado do outro como se fosse span*/
+  display: flex; 
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* 2 - flex column */
+.flex-column {
+  display: flex;
+  /*Comporta como se fosse uma div, elementos em block*/
+  flex-direction: column;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* 3 - wrap */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.box {
+  height: 40px;
+  width: 33%; /*3 por linha*/
+  border: 1px solid red;
+}
+
+/* 4 - justify content */
+.center,
+.space-around,
+.space-between,
+.end {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box {
+  width: 50px;
+}
+/*Joga a div para o centro*/
+.center {
+  justify-content: center;
+}
+/*Espaço entre as laterais das divs*/
+.space-around {
+  justify-content: space-around;
+}
+/*Mesma coisa, sem espaço na primeira div*/
+.space-between {
+  justify-content: space-between;
+}
+/*Inverte o padrão, jogando para a direita*/
+.end {
+  justify-content: end;
+}
+
+/* align items */
+.center,
+.align-center,
+.flex-end,
+.stretch {
+  display: flex;
+  margin-bottom: 20px;
+  height: 200px;
+  border: 1px solid blue;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box {
+  width: 50px;
+}
+/*Centralizado na horizontal e vertical*/
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+/*Coloca na parte de baixo */
+.flex-end {
+  align-items: flex-end;
+}
+/*Preenche a altura toda , se alonga*/
+.stretch {
+  align-items: stretch;
+}
+/*Altura automática para obedecer o stretch*/
+.stretch .box {
+  height: auto;
+}
+
+/* gap */
+.gap {
+  display: flex; /*Mesma linha*/
+  flex-wrap: wrap;/*Quebra linha*/
+  justify-content: center; /*Centralizada*/
+  border: 1px solid green;
+  gap: 10px; /*Espaçamento entre os itens*/
+}
+
+.gap .box {
+  width: 32%; /*Largura*/
+}
+
+/* order */
+.order {
+  display: flex;
+}
+
+#one {
+  order: 1;
+}
+
+#two {
+  order: 2;
+}
+
+#three {
+  order: 3;
+}
+
+/* grow */
+.grow {
+  display: flex;
+}
+
+/*Padrão*/
+.grow .box {
+  flex: 1;
+}
+/*Aumenta por 2 vezes*/
+.grow .big {
+  flex: 2;
+}
+
+/* basis */
+.basis {
+  display: flex;
+}
+/*Toda as divs ficam com 20px*/
+.basis .box {
+  flex-basis: 20px;
+}
+/*Preenche até completar toda a largura*/
+.basis .big {
+  flex-grow: 1;
+}
+
+/* shrink */
+.shrink {
+  display: flex;
+}
+
+.shrink .box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  width: auto;
+}
+/*Elemento do meio diminui ao diminuir tela*/
+.shrink .small {
+  flex-shrink: 2;
+}
+
+/* shorthand */
+.shorthand {
+  display: flex;
+}
+
+.shorthand .box {
+  width: auto;
+  /*1 vez maior que os outros elementos(Normal),
+ encolhe normal e uma largura básica de 50px*/
+  flex: 1 1 50px;
+}
+/*3 vezes maior que os outros elementos(,
+ encolhe normal e uma largura básica de 400px*/
+.shorthand .different {
+  flex: 3 1 400px;
+}
+
+.auto-alignment {
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid purple;
+}
+/*Mudando a regra do end acima alinhando
+a div ao centro*/
+.auto-alignment .different {
+  align-self: center;
+}

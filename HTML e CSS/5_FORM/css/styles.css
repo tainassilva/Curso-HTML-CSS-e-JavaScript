@@ -1,0 +1,20 @@
+body {
+  /*Um espaço a mais para rolar a página*/
+  padding-bottom: 500px;
+}
+
+div {
+  /*Para afastar um input do outro*/
+  margin-bottom: 10px;
+}
+/*Um em cada linha*/
+div input,
+div label {
+  display: block;
+}
+
+.radio label,
+.radio input,
+.radio span {
+  display: inline-block;
+}

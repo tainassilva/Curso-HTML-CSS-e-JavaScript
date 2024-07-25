@@ -1,0 +1,36 @@
+/* 2 - media query */
+h1 {
+  color: red;
+}
+
+/*Muda a cor do H1 quando a tela fica em 500 pixels*/
+@media screen and (max-width: 500px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* 3 - min-width */
+p {
+  background-color: red;
+  color: #000;
+}
+
+@media screen and (min-width: 800px) {
+  p {
+    background-color: #789;
+    color: red;
+  }
+}
+
+/* 4 - landscape */
+h3 {
+  display: none;
+}
+/*Só vai estar visível quando estiver em landscape
+Landscape é quando o celular vira de lado*/
+@media screen and (orientation: landscape) {
+  h3 {
+    display: block;
+  }
+}

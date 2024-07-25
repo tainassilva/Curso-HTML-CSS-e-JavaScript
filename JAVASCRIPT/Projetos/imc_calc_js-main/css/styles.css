@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #090e22;
+  /*Para centralizar meu container*/
+  display: flex;
+  /*Centralizar horizontal e vertical*/
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  min-width: 400px;
+  min-height: 400px;
+  background-color: #1d1e33;
+  /*Afastando conteúdo das extremidades*/
+  padding: 2rem;
+}
+
+/* IMC Form */
+#calc-container h2 {
+  text-align: center;
+  /*Afasta elementos que vem depois dele*/
+  margin-bottom: 2rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  /*Deixa os itens igualmente*/
+  justify-content: space-between;
+}
+
+.form-control {
+  display: flex;
+  /*Se arrasta pro fim da tela*/
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: #ccc;
+}
+
+.form-control input {
+  padding: 1rem 0.5rem;
+}
+
+.action-control {
+  display: flex;
+  /*Um botão para o fim da tela e outro para o lado*/
+  justify-content: space-between;
+  margin-top: 2rem;
+  /*Um intervalo para os botões não ficarem colados*/
+  gap: 1rem;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  background-color: #f44236;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.9;
+  /*Até o fim da div*/
+  flex: 1;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+#clear-btn {
+  background-color: #444;
+}
+
+/* Table */
+#result-container {
+  text-align: center;
+}
+
+#imc-number {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+#imc-info {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+#result-container h3 {
+  margin-top: 1rem;
+  color: #dfdfdf;
+}
+
+#result-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#imc-table {
+  margin: 1.5rem 0;
+  font-size: 0.8rem;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.table-header,
+.table-data {
+  /*Se tem mais conteúdo vai empurrando os demais*/
+  display: flex;
+  /*Espaçamento igual entre eles*/
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  /*Divide os inputs*/
+  border-bottom: 1px solid #444;
+  text-align: center;
+}
+
+.table-header h4,
+.table-data p {
+  flex: 1;
+}
+
+/*O h4 na posição 3 vai ter um estilo específico
+A estilização dele é isolada de todos os outros*/
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+  max-width: 80px;
+}
+
+#back-btn {
+  /*Centraliza botão...*/
+  align-self: center;
+}
+
+.good {
+  color: #12db34;
+}
+
+.low {
+  color: #dbce12;
+}
+
+.medium {
+  color: #db6212;
+}
+
+.high {
+  color: #db1912;
+}

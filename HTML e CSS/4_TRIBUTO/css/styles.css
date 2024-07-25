@@ -1,0 +1,80 @@
+html {
+  font-family: Helvetica;
+  background-color: #ddd;
+}
+
+.container {
+  max-width: 1100px;/*Largura máxima*/
+  background-color: #fff;
+  position: relative;
+  margin: 50px auto; /*Em cima e embaixo com 50 px*/
+  padding: 20px 50px; /*Conteúdo não fica tão próximo da borda*/
+}
+/*Palavras em negrito*/
+.bold {
+  font-weight: bold;
+}
+
+/* header */
+.header {
+  text-align: center;
+  /*Texto alinhado ao centro*/
+}
+
+.main-title {
+  font-size: 40px;
+}
+
+.main-paragraph {
+  font-style: italic;
+}
+
+/* Imagem destaque */
+.featured-image {
+  text-align: center; /*Texto centralizado puxa a imagem*/
+  margin-top: 30px; /*Distância do parágrafo acima*/
+}
+
+/* Biografia */
+.biography-container {
+  /*Padronizando a distância entre as divs*/
+  padding: 25px 0; /*Em cima e embaixo, zerando as laterais*/
+  margin: 25px 0; 
+  /*Dashed é tracejado*/
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* Quotes */
+.quotes-container {
+  background-color: #ddd;
+  padding: 30px;
+}
+/*Aplicando regras para o seletor*/
+.quotes-container blockquote {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.quotes-container p {
+  font-style: italic;
+}
+
+/* Curiosidades */
+.curiosities-container {
+  padding: 25px 0;
+  margin: 25px 0;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+
+/*Itens mais espaçados*/
+.curiosities-container li {
+  height: 30px;
+}
+
+/* Imagem bold alinhando a imagem */
+.img-bold {
+  font-weight: bold;
+  text-align: center;
+}

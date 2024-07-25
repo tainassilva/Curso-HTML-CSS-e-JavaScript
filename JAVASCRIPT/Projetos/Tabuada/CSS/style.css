@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body{
+    color: #fff;
+    text-align: center;
+    /*Afasta da borda os elementos internos*/
+    padding: 2rem;
+    /*Para poder trabalhar no Gradient*/
+    min-height: 100vh;
+    background: linear-gradient(180deg, #DB4444 0%, #3f24dd 98%); 
+}
+h2{
+    /*Afastando conteúdos abaixo*/
+    margin-bottom: 1rem;
+}
+/*Com a hashtag é o pai
+Com o ponto são os ids, filhos das classes*/
+#multiplication-form{
+    /*Conteúdo um do lado do outro*/
+    display : flex;
+    /*Alinha no centro na horizontal e vertical*/
+    justify-content: center;
+    align-items: center;
+    /*Quebra linha caso o elemento passar da tela*/
+    flex-wrap: wrap;
+    /*Largura máxima*/
+    max-width: 300px;
+    /*A div se centraliza por meio dessa margem*/
+    margin: 1rem auto;
+    /*Afastando da outra div por cima*/
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #333
+}
+
+.form-control{
+    display: flex;
+    /*Um embaixo do outro*/
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin: 0 1rem;
+}
+.form-control label{
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.form-control input{
+    /*Para afastar do botão de submit*/
+    margin-bottom: 1rem;
+    /*Preencha o maximo da largura possível
+    da largura do elemento pai*/
+    flex: 1;
+    /*Preenchimento do botão*/
+    padding: 0.6rem 0.4rem;
+    border: 1px solid #333;
+    /*Diminui a largura em relação ao pai*/
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#multiplication-form input[type="submit"]{
+    max-height: 50px;
+    padding: 0.6rem 1.2rem;
+    width: 200px;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#multiplication-operations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Jogou os itens para a esquerda*/
+    max-width: 500px;
+    /*Centraliza o elemento*/
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 1rem;
+}
+#multiplication-operations .row{
+    display: flex;
+    justify-content: center;
+    border: 1px solid  #ccc;
+    /*O último elemento nunca vai ter borda embaixo*/
+    border-bottom: none;
+    /*Preenche espaço*/
+    padding: 0.5rem;
+    width: 150px;
+}
+/*Atinge o último filho...*/
+#multiplication-operations .row:last-child{
+    border-bottom: 1px solid #ccc;
+}
+#multiplication-operations .result{
+    margin-left : 0.4rem;
+}
